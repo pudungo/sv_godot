@@ -4,11 +4,11 @@ extends CharacterBody3D
 
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
 
-@export var move_speed := 5.0
+@export var move_speed := 3.0
 @export var acceleration := 10.0
 @export var rotation_speed := 12.0
 
-@export var jump_impulse := 10.0
+@export var jump_impulse := 12.0
 var gravity := -30.0
 
 var last_movement_direction := Vector3.BACK
