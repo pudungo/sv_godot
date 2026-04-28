@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d4n4ub6itgm8s"]
+
+[ext_resource type="PackedScene" uid="uid://hc2jocd14b80" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retro buildingMaterial_002.glb" id="1_b02a"]
+[ext_resource type="Material" uid="uid://b013" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retro building.blend.tres" id="2_b011"]
+
+[node name="retro buildingMaterial_002" instance=ExtResource("1_b02a")]
+
+[node name="Plane_001" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_b011")

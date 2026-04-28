@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgm4s"]
+
+[ext_resource type="PackedScene" uid="uid://btbgte1knl3ux" path="res://Models/Salsa Dancing_9_8_7_6_5_4_3_2_1.glb" id="1_b1ae"]
+[ext_resource type="Material" uid="uid://bhls" path="res://Models/MELEEGUY_TXT2/meleeguyMAT.tres" id="2_bhls"]
+
+[node name="Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max1meleeguyMAT" instance=ExtResource("1_b1ae")]
+
+[node name="low_Cylinder002" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bhls")

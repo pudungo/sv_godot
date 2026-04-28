@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgore"]
+
+[ext_resource type="PackedScene" uid="uid://b3e7b2o1d0p1l" path="res://Anim/kaj_02_27_24_23_22_21_20_19_18_17_16_15_14_13_12_11.glb" id="1_byna"]
+[ext_resource type="Material" uid="uid://bgto" path="res://Models/kaj_mat.tres" id="2_bgto"]
+
+[node name="kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max11kaj_mat" instance=ExtResource("1_byna")]
+
+[node name="polySurface10" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bgto")

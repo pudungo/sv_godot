@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwwe"]
+
+[ext_resource type="PackedScene" uid="uid://vs" path="res://Library/unity default resources.glb" id="1_vs"]
+[ext_resource type="Material" uid="uid://3c" path="res://MemoryAssets/SpatialMappingWireframe_954.tres" id="2_3c"]
+
+[node name="unity default resources" instance=ExtResource("1_vs")]
+
+[node name="Sphere" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_3c")

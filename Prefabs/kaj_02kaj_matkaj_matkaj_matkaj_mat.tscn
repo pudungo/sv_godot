@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgoy7"]
+
+[ext_resource type="PackedScene" uid="uid://deb5cak22s0os" path="res://Anim/kaj_02_4_3_2_1.glb" id="1_bynm"]
+[ext_resource type="Material" uid="uid://bgto" path="res://Models/kaj_mat.tres" id="2_bgto"]
+
+[node name="kaj_02kaj_matkaj_matkaj_matkaj_mat" instance=ExtResource("1_bynm")]
+
+[node name="Box011" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bgto")

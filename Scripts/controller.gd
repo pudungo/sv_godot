@@ -1,0 +1,99 @@
+extends CharacterBody3D
+
+@export_group("Camera")
+
+@export_range(0.0, 1.0) var mouse_sensitivity := 0.25
+
+@export var move_speed := 5.0
+@export var acceleration := 10.0
+@export var rotation_speed := 12.0
+
+@export var jump_impulse := 10.0
+var gravity := -30.0
+
+var last_movement_direction := Vector3.BACK
+var _camera_input_direction := Vector2.ZERO
+
+@onready var camera_pivot: Node3D = $CameraPivot
+@onready var camera: Camera3D = $CameraPivot/SpringArm3D/Camera3D
+@onready var character_visual: Node3D = $kajanim_go2
+@onready var animation_player: AnimationPlayer = $kajanim_go2/AnimationPlayer
+
+func _unhandled_input(event: InputEvent) -> void:
+	var is_camera_motion := (
+		event is InputEventMouseMotion and
+		Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED
+		)
+	if is_camera_motion:
+		_camera_input_direction = event.screen_relative * mouse_sensitivity
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("left_click"):
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	if event.is_action_pressed("ui_cancel"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		
+func _physics_process(delta: float) -> void:
+	
+	camera_pivot.rotation.x += _camera_input_direction.y * delta
+	
+	camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, -PI / 6.0, PI/3.0)
+	
+	camera_pivot.rotation.y -= _camera_input_direction.x * delta
+	
+	_camera_input_direction = Vector2.ZERO
+	
+
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var raw_input := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	
+	var forward := -camera.global_basis.z
+	var right := camera.global_basis.x
+	
+	var move_direction := forward * -raw_input.y + right * raw_input.x
+	move_direction.y = 0.0
+	move_direction = move_direction.normalized()
+	
+	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
+
+
+	move_and_slide()
+	
+	if move_direction.length() > 0.0:
+		last_movement_direction = move_direction.normalized()
+		
+	var target_angle := atan2(last_movement_direction.x, last_movement_direction.z) + PI
+	character_visual.rotation.y = lerp_angle(
+		character_visual.rotation.y,
+		target_angle, 
+		rotation_speed * delta
+	)
+	
+
+		
+	var y_velocity := velocity.y
+	velocity.y = 0.0
+	
+	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
+	
+	velocity.y = y_velocity + gravity * delta
+	
+	var is_starting_jump := Input.is_action_just_pressed("jump") and is_on_floor()
+	if is_starting_jump:
+			velocity.y +=jump_impulse
+			
+	move_and_slide()
+	
+	if is_starting_jump:
+		animation_player.play("jump")
+	elif not is_on_floor() and velocity.y < 0:
+		animation_player.play("fall")
+	
+	elif is_on_floor():
+		var ground_speed := velocity.length()
+		if ground_speed > 0.0:
+			animation_player.play("walk")
+		else:
+			animation_player.play("idle")

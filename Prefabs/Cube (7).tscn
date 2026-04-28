@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvek"]
+
+[ext_resource type="PackedScene" uid="uid://bvow" path="res://Cube (7).glb" id="1_bvow"]
+[ext_resource type="Material" uid="uid://bhpu" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/walls.tres" id="2_bhpu"]
+
+[node name="Cube (7)" instance=ExtResource("1_bvow")]
+
+[node name="pb_Mesh-151262" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bhpu")

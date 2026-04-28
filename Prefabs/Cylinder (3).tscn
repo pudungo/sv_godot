@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvva"]
+
+[ext_resource type="PackedScene" uid="uid://bvbs" path="res://Cylinder (3).glb" id="1_bvbs"]
+[ext_resource type="Material" uid="uid://bg2e" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/floor.tres" id="2_bg2e"]
+
+[node name="Cylinder (3)" instance=ExtResource("1_bvbs")]
+
+[node name="pb_Mesh-167138(Clone)(Clone)(Clone)" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bg2e")

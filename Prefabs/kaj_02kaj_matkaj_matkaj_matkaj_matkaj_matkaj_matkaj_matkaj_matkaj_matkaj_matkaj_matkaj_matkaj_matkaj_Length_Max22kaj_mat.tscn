@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgopg"]
+
+[ext_resource type="PackedScene" uid="uid://cpr5pwilshjpx" path="res://Anim/kaj_02_38_35_34_33_32_31_30_29_28_27_26_25_24_23_22.glb" id="1_bymg"]
+[ext_resource type="Material" uid="uid://bgto" path="res://Models/kaj_mat.tres" id="2_bgto"]
+
+[node name="kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max22kaj_mat" instance=ExtResource("1_bymg")]
+
+[node name="r_shirt" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bgto")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvog"]
+
+[ext_resource type="PackedScene" uid="uid://b0cpqhglgmbnj" path="res://Library/unity default resources_5_2_1.glb" id="1_vo"]
+[ext_resource type="Material" uid="uid://bg0k" path="res://Models/RedDanger.tres" id="2_bg0k"]
+
+[sub_resource type="BoxShape3D" id="0_bvoi"]
+size = Vector3( 1, 1, 1)
+
+[node name="unity default resourcesRedDangerRedDangerRedDanger" instance=ExtResource("1_vo")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bg0k")
+
+[node name="StaticBody" type="StaticBody3D" parent="." ]
+
+[node name="BoxCollider_0" type="CollisionShape3D" parent="StaticBody" ]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("0_bvoi")
+
+debug_fill = false

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bu5g"]
+
+[ext_resource type="PackedScene" uid="uid://bv0s" path="res://Cube (24).glb" id="1_bv0s"]
+[ext_resource type="Material" uid="uid://bhuy" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/ground.tres" id="2_bhuy"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_iq3kp"]
+data = PackedVector3Array(1.3685, -0.1295, 2.7059999, -1.3685, -0.1295, 2.7059999, 1.3685, 0.1295, 2.7059999, -1.3685, -0.1295, 2.7059999, -1.3685, 0.1295, 2.7059999, 1.3685, 0.1295, 2.7059999, -1.3685, -0.1295, 2.7059999, -1.3685, -0.1295, -2.7059999, -1.3685, 0.1295, 2.7059999, -1.3685, -0.1295, -2.7059999, -1.3685, 0.1295, -2.7059999, -1.3685, 0.1295, 2.7059999, -1.3685, -0.1295, -2.7059999, 1.3685, -0.1295, -2.7059999, -1.3685, 0.1295, -2.7059999, 1.3685, -0.1295, -2.7059999, 1.3685, 0.1295, -2.7059999, -1.3685, 0.1295, -2.7059999, 1.3685, -0.1295, -2.7059999, 1.3685, -0.1295, 2.7059999, 1.3685, 0.1295, -2.7059999, 1.3685, -0.1295, 2.7059999, 1.3685, 0.1295, 2.7059999, 1.3685, 0.1295, -2.7059999, 1.3685, 0.1295, 2.7059999, -1.3685, 0.1295, 2.7059999, 1.3685, 0.1295, -2.7059999, -1.3685, 0.1295, 2.7059999, -1.3685, 0.1295, -2.7059999, 1.3685, 0.1295, -2.7059999, 1.3685, -0.1295, -2.7059999, -1.3685, -0.1295, -2.7059999, 1.3685, -0.1295, 2.7059999, -1.3685, -0.1295, -2.7059999, -1.3685, -0.1295, 2.7059999, 1.3685, -0.1295, 2.7059999)
+
+[node name="Cube (24)" unique_id=1739298178 instance=ExtResource("1_bv0s")]
+
+[node name="pb_Mesh-411876" parent="." index="0" unique_id=539688407]
+surface_material_override/0 = ExtResource("2_bhuy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pb_Mesh-411876" index="0" unique_id=746928032]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pb_Mesh-411876/StaticBody3D" index="0" unique_id=1934197941]
+shape = SubResource("ConcavePolygonShape3D_iq3kp")

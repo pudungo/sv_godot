@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgl45"]
+
+[ext_resource type="PackedScene" uid="uid://byoq" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/WEEPING angel.glb" id="1_byoq"]
+[ext_resource type="Material" uid="uid://byoo" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/WEEPING angel.blend" id="2_byoo"]
+
+[node name="WEEPING angel" instance=ExtResource("1_byoq")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_byoo")

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cipl5vlioxfx4"]
+
+[ext_resource type="Script" uid="uid://d1s5y85wwcvl4" path="res://Scripts/controller.gd" id="1_jkvsr"]
+[ext_resource type="PackedScene" uid="uid://bu68vv7u52al1" path="res://kajanim_go_2.tscn" id="2_y4u5e"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jkvsr"]
+radius = 0.4897461
+height = 2.11837
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y4u5e"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=401991299]
+disable_mode = 2
+script = ExtResource("1_jkvsr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=244367553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0650337, 0)
+shape = SubResource("CapsuleShape3D_jkvsr")
+
+[node name="kajanim_go2" parent="." unique_id=328743307 instance=ExtResource("2_y4u5e")]
+transform = Transform3D(-0.016, 0, -1.3987644e-09, 0, 0.016, 0, 1.3987644e-09, 0, -0.016, 0, -0.12534797, 0)
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1708359788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2558007, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1748378688]
+shape = SubResource("SphereShape3D_y4u5e")
+spring_length = 2.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1114254080]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgowk"]
+
+[ext_resource type="PackedScene" uid="uid://c1neiw4b3l45x" path="res://Anim/kaj_02_19.glb" id="1_byl5"]
+[ext_resource type="Material" uid="uid://bylm" path="res://Anim/kaj_02.fbx" id="2_bylm"]
+
+[node name="kaj_0201___Default" instance=ExtResource("1_byl5")]
+
+[node name="Group32964" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bylm")

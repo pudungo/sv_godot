@@ -1,0 +1,8 @@
+[gd_resource type = "StandardMaterial3D" load_steps=2 format=3 uid="uid://bw2c"]
+
+[ext_resource type="Texture2D" uid="uid://b1nm" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Nature Textures/TexturesCom_Tree_BeechBranch01_512_albedo.png" id="1_b1nm"]
+
+[resource]
+resource_name = "TexturesCom_Tree_BeechBranch01_512_albedo"
+albedo_color = Color(1.000, 1.000, 1.000, 1.000)
+blend_mode = 0 albedo_texture = ExtResource("1_b1nm")

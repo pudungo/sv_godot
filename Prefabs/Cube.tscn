@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwu3"]
+
+[ext_resource type="PackedScene" uid="uid://bwqs" path="res://Cube.glb" id="1_bwqs"]
+[ext_resource type="Material" uid="uid://bhgw" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/bark.tres" id="2_bhgw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1o5oo"]
+size = Vector3(16.684326, 0.9199219, 19.167053)
+
+[node name="Cube" unique_id=484936577 instance=ExtResource("1_bwqs")]
+
+[node name="pb_Mesh-119976" parent="." index="0" unique_id=986726443]
+surface_material_override/0 = ExtResource("2_bhgw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1133159171]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1099024777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03137207, -0.040039063, -0.060943604)
+shape = SubResource("BoxShape3D_1o5oo")

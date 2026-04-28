@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgmnu"]
+
+[ext_resource type="PackedScene" uid="uid://byj7" path="res://Symphonie/Ruins/Model/M_archway_pillar02.glb" id="1_byj7"]
+[ext_resource type="Material" uid="uid://bhju" path="res://Symphonie/Ruins/Build_IN/Materials/MT_archway_pillar02_Built-in.tres" id="2_bhju"]
+
+[node name="M_archway_pillar02" instance=ExtResource("1_byj7")]
+
+[node name="archway_pillar02" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bhju")

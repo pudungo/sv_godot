@@ -1,0 +1,51 @@
+[gd_scene load_steps=1 format=3 uid="uid://bu6c"]
+
+[node name="UICanvas" type="Control"  ]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_right = 768
+offset_bottom = 432
+[node name="GameOverScreen" type="Control" parent="." ]
+offset_left = 733
+offset_top = 390
+offset_right = 1187
+offset_bottom = 690
+[node name="Image" type="TextureRect" parent="GameOverScreen" ]
+offset_left = -556
+offset_top = -292.5
+offset_right = 1010
+offset_bottom = 592.5
+[node name="Text (TMP)" type="Control" parent="GameOverScreen" ]
+offset_left = 127
+offset_top = 125
+offset_right = 327
+offset_bottom = 175
+[node name="Restart" type="TextureRect" parent="GameOverScreen" ]
+offset_left = 147
+offset_top = 135
+offset_right = 307
+offset_bottom = 165
+[node name="Text (TMP)_406" type="Control" parent="GameOverScreen/Restart" ]
+offset_left = 0
+offset_top = 0
+offset_right = 160
+offset_bottom = 30
+[node name="Collectible" type="Control" parent="." ]
+offset_left = 910
+offset_top = 490
+offset_right = 1010
+offset_bottom = 590
+[node name="CoinNumber" type="Control" parent="Collectible" ]
+offset_left = -50
+offset_top = 25
+offset_right = 150
+offset_bottom = 75
+[node name="CoinHeader" type="Control" parent="Collectible" ]
+offset_left = -50
+offset_top = 25
+offset_right = 150
+offset_bottom = 75

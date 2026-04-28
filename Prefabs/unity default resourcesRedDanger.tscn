@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu41"]
+
+[ext_resource type="PackedScene" uid="uid://df07u2yvn7ngk" path="res://Library/unity default resources_1.glb" id="1_vu"]
+[ext_resource type="Material" uid="uid://bg0k" path="res://Models/RedDanger.tres" id="2_bg0k"]
+
+[sub_resource type="CapsuleShape3D" id="0_bu47"]
+radius = 0.5
+height = 2
+
+[node name="unity default resourcesRedDanger" instance=ExtResource("1_vu")]
+
+[node name="Capsule" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bg0k")
+
+[node name="StaticBody" type="StaticBody3D" parent="." ]
+
+[node name="CapsuleCollider_0" type="CollisionShape3D" parent="StaticBody" ]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("0_bu47")
+
+debug_fill = false

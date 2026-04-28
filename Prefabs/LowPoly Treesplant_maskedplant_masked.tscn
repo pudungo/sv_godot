@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvic"]
+
+[ext_resource type="PackedScene" uid="uid://b4sxvrg7jnkmt" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Trees_4_1.glb" id="1_bxau"]
+[ext_resource type="Material" uid="uid://bhpg" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Nature Textures/Materials/plant masked.tres" id="2_bhpg"]
+
+[node name="LowPoly Treesplant_maskedplant_masked" instance=ExtResource("1_bxau")]
+
+[node name="TexturesCom_Branches0014_1_masked_S_002" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bhpg")

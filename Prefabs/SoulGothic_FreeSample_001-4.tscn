@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgo27"]
+
+[ext_resource type="PackedScene" uid="uid://byko" path="res://FreeSample/FreeSample/SoulGothic_FreeSample_001-4.glb" id="1_byko"]
+[ext_resource type="Material" uid="uid://bykm" path="res://FreeSample/FreeSample/SoulGothic_FreeSample_001-4.obj" id="2_bykm"]
+
+[node name="SoulGothic_FreeSample_001-4" instance=ExtResource("1_byko")]
+
+[node name="default" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bykm")

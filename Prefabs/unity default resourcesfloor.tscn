@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://buxu"]
+
+[ext_resource type="PackedScene" uid="uid://dfcibsytlnlwv" path="res://Library/unity default resources_4.glb" id="1_vo"]
+[ext_resource type="Material" uid="uid://bg2e" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/floor.tres" id="2_bg2e"]
+
+[sub_resource type="BoxShape3D" id="0_buxy"]
+size = Vector3( 1, 1, 1)
+
+[node name="unity default resourcesfloor" instance=ExtResource("1_vo")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bg2e")
+
+[node name="StaticBody" type="StaticBody3D" parent="." ]
+
+[node name="BoxCollider_0" type="CollisionShape3D" parent="StaticBody" ]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("0_buxy")
+
+debug_fill = false

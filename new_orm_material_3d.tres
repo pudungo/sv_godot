@@ -1,0 +1,12 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://j6qiswcf4kx2"]
+
+[ext_resource type="Texture2D" uid="uid://c37pla0mcinjd" path="res://Kaj_txtmaps/Justin_Huynh_T_diff (1).png" id="1_1ho5i"]
+[ext_resource type="Texture2D" uid="uid://bs36py1asu667" path="res://Kaj_txtmaps/Justin_Huynh_T_roug.png" id="2_osl12"]
+[ext_resource type="Texture2D" uid="uid://cwdmky6h8klgc" path="res://Kaj_txtmaps/Justin_Huynh_T_norm.png" id="3_01hv2"]
+
+[resource]
+albedo_texture = ExtResource("1_1ho5i")
+normal_enabled = true
+normal_texture = ExtResource("3_01hv2")
+clearcoat_roughness = 1.0
+clearcoat_texture = ExtResource("2_osl12")

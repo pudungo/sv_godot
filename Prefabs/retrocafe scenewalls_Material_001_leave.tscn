@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d4n4ub6itgmpc"]
+
+[ext_resource type="PackedScene" uid="uid://qftda6nfwxdi" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scenewalls_Material_001_leave.glb" id="1_b1jc"]
+[ext_resource type="Material" uid="uid://b013" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retro building.blend.tres" id="2_nc00l"]
+[ext_resource type="Material" uid="uid://b1i3" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene.blend.tres" id="4_b1ja"]
+
+[node name="retrocafe scenewalls_Material_001_leave" unique_id=1400691407 instance=ExtResource("1_b1jc")]
+
+[node name="hous" parent="." index="0" unique_id=858969546]
+surface_material_override/0 = ExtResource("2_nc00l")
+surface_material_override/1 = ExtResource("2_nc00l")
+surface_material_override/2 = ExtResource("4_b1ja")

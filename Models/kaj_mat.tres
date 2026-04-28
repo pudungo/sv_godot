@@ -1,0 +1,11 @@
+[gd_resource type = "StandardMaterial3D" load_steps=3 format=3 uid="uid://bgto"]
+
+[ext_resource type="Texture2D" uid="uid://b1nw" path="res://Models/Textures/Justin_Huynh_T_diff (1).png" id="1_b1nw"]
+[ext_resource type="Texture2D" uid="uid://b1nu" path="res://Models/Textures/Justin_Huynh_T_norm.png" id="2_b1nu"]
+
+[resource]
+resource_name = "kaj_mat"
+albedo_color = Color(1.000, 1.000, 1.000, 1.000)
+blend_mode = 0 albedo_texture = ExtResource("1_b1nw")
+normal_enabled = true
+normal_texture = ExtResource("2_b1nu")

@@ -1,0 +1,8 @@
+[gd_resource type = "StandardMaterial3D" load_steps=2 format=3 uid="uid://byla"]
+
+[ext_resource type="Texture2D" uid="uid://b1mm" path="res://FreeSample/FreeSample/SoulGothic_FreeSample_001-7.png" id="1_b1mm"]
+
+[resource]
+resource_name = "palette"
+albedo_color = Color(1.000, 1.000, 1.000, 1.000)
+blend_mode = 0 albedo_texture = ExtResource("1_b1mm")

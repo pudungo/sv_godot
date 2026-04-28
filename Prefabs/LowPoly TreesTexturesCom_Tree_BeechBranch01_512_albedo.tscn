@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://buuk"]
+
+[ext_resource type="PackedScene" uid="uid://cxug1qr4bthhq" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Trees_6.glb" id="1_bw2e"]
+[ext_resource type="Material" uid="uid://bw2c" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Trees.blend" id="2_bw2c"]
+
+[node name="LowPoly TreesTexturesCom_Tree_BeechBranch01_512_albedo" instance=ExtResource("1_bw2e")]
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bw2c")

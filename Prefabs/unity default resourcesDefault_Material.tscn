@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://buvo"]
+
+[ext_resource type="PackedScene" uid="uid://70ogu7q2pihb" path="res://Library/unity default resources_2.glb" id="1_vq"]
+[ext_resource type="Material" uid="uid://1s" path="res://MemoryAssets/Default-Material_902.tres" id="2_1s"]
+
+[sub_resource type="CapsuleShape3D" id="0_d4n4u"]
+radius = 0.5000001
+height = 2
+
+[node name="unity default resourcesDefault_Material" instance=ExtResource("1_vq")]
+
+[node name="Cylinder" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_1s")
+
+[node name="StaticBody" type="StaticBody3D" parent="." ]
+
+[node name="CapsuleCollider_0" type="CollisionShape3D" parent="StaticBody" ]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("0_d4n4u")
+
+debug_fill = false

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d4n4ub6itgmo3"]
+
+[ext_resource type="PackedScene" uid="uid://bdfm17uewudfp" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe sceneMaterial_003Material_003.glb" id="1_b1jo"]
+[ext_resource type="Material" uid="uid://b1i3" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene.blend.tres" id="2_b1jg"]
+
+[node name="retrocafe sceneMaterial_003Material_003" instance=ExtResource("1_b1jo")]
+
+[node name="linemoss" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_b1jg")

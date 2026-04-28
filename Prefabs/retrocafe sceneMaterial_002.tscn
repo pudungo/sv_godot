@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4n4ub6itgmou"]
+
+[ext_resource type="PackedScene" uid="uid://iorvibehlbw7" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene_4.glb" id="1_b1jk"]
+[ext_resource type="Material" uid="uid://b1i3" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene.blend" id="2_b1i3"]
+
+[node name="retrocafe sceneMaterial_002" instance=ExtResource("1_b1jk")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_b1i3")

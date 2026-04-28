@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d4n4ub6itgmps"]
+
+[ext_resource type="PackedScene" uid="uid://b1jm" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene.glb" id="1_b1jm"]
+[ext_resource type="Material" uid="uid://b1i3" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/Blend Files/retrocafe scene.blend.tres" id="2_b1je"]
+
+[node name="retrocafe scene" instance=ExtResource("1_b1jm")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_b1je")

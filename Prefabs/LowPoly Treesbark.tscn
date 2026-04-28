@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d4n4ub6itgmm3"]
+
+[ext_resource type="PackedScene" uid="uid://d0wvo2i4mnyyy" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Treesbark.glb" id="1_bxd3"]
+[ext_resource type="Material" uid="uid://bw2c" path="res://PSX Nature Volume 1/PSX Nature Volume 1/LowPoly Trees.blend.tres" id="2_bw6c"]
+
+[node name="LowPoly Treesbark" instance=ExtResource("1_bxd3")]
+
+[node name="Cylinder_001" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bw6c")

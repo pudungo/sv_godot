@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu6q"]
+
+[ext_resource type="PackedScene" uid="uid://but5" path="res://Door (1).glb" id="1_but5"]
+[ext_resource type="Material" uid="uid://bhpu" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/walls.tres" id="2_bhpu"]
+
+[node name="Door (1)" instance=ExtResource("1_but5")]
+
+[node name="pb_Mesh-156886" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_bhpu")

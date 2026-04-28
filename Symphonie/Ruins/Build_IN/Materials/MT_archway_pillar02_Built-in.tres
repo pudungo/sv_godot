@@ -1,0 +1,22 @@
+[gd_resource type = "StandardMaterial3D" load_steps=5 format=3 uid="uid://bhju"]
+
+[ext_resource type="Texture2D" uid="uid://b1ly" path="res://Symphonie/Ruins/Texture/archway_pillar02/T_archway_pillar02_D.png" id="1_b1ly"]
+[ext_resource type="Texture2D" uid="uid://b1lw" path="res://Symphonie/Ruins/Texture/archway_pillar02/T_archway_pillar02_N.png" id="2_b1lw"]
+[ext_resource type="Texture2D" uid="uid://b1l3" path="res://Symphonie/Ruins/Texture/archway_pillar02/T_archway_pillar02_O.png" id="3_b1l3"]
+[ext_resource type="Texture2D" uid="uid://b1l1" path="res://Symphonie/Ruins/Texture/archway_pillar02/T_archway_pillar02_M.png" id="4_b1l1"]
+
+[resource]
+resource_name = "MT_archway_pillar02_Built-in"
+albedo_color = Color(1.000, 1.000, 1.000, 1.000)
+blend_mode = 0 albedo_texture = ExtResource("1_b1ly")
+normal_enabled = true
+normal_texture = ExtResource("2_b1lw")
+ao_enabled = true
+ao_texture = ExtResource("3_b1l3")
+ao_texture_channel = 1
+metallic = 1.0
+metallic_texture = ExtResource("4_b1l1")
+metallic_texture_channel = 0
+roughness = 1.0
+roughness_texture = ExtResource("4_b1l1")
+roughness_texture_channel = 3
