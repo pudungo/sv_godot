@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://di55246323d8d"]
+
+[ext_resource type="Texture2D" uid="uid://hcs1uyc24vxv" path="res://UIElements/you-win-message-red-blue-background-ney2byhun95p3pg1-ney2byhun95p3pg1.png" id="1_dimls"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dimls"]
+bg_color = Color(0.76862746, 0.5529412, 0.23921569, 0.19215687)
+
+[node name="WinUi" type="Node2D" unique_id=2015907316]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=795264037]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=357233663]
+offset_right = 1924.0
+offset_bottom = 1074.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dimls")
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel" unique_id=997892989]
+visible = false
+layout_mode = 0
+offset_right = 1936.0
+offset_bottom = 1064.0
+text = "You WIN"
+
+[node name="YouWinMessageRedBlueBackgroundNey2Byhun95p3Pg1Ney2Byhun95p3Pg1" type="Sprite2D" parent="." unique_id=973178093]
+position = Vector2(967.00006, 517)
+scale = Vector2(1.64, 1)
+texture = ExtResource("1_dimls")

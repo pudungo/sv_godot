@@ -18,6 +18,10 @@ config/name="Solvamp_v01"
 run/main_scene="uid://cmpbbq"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+CollectibleManager="*uid://d1srr625jx5f7"
+
 [display]
 
 window/size/viewport_width=1920

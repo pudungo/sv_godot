@@ -7,6 +7,7 @@ extends CharacterBody3D
 @export var move_speed := 3.0
 @export var acceleration := 10.0
 @export var rotation_speed := 12.0
+@export var click_interact_distance := 100.0
 
 @export var jump_impulse := 12.0
 var gravity := -30.0
@@ -30,8 +31,34 @@ func _unhandled_input(event: InputEvent) -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_click"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		_toggle_clicked_mover()
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+
+func _toggle_clicked_mover() -> void:
+	var viewport := get_viewport()
+	var mouse_pos := viewport.get_mouse_position()
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		mouse_pos = viewport.get_visible_rect().size * 0.5
+
+	var ray_from := camera.project_ray_origin(mouse_pos)
+	var ray_to := ray_from + camera.project_ray_normal(mouse_pos) * click_interact_distance
+	var ray_params := PhysicsRayQueryParameters3D.create(ray_from, ray_to)
+	ray_params.collide_with_bodies = true
+	ray_params.collide_with_areas = true
+	ray_params.exclude = [self]
+
+	var hit := get_world_3d().direct_space_state.intersect_ray(ray_params)
+	if hit.is_empty():
+		return
+
+	var clicked_node: Node = hit["collider"]
+	while clicked_node != null:
+		if clicked_node.has_method("toggle_frozen"):
+			clicked_node.call("toggle_frozen")
+			return
+		clicked_node = clicked_node.get_parent()
 		
 func _physics_process(delta: float) -> void: 
 	# Mouse look/aim control

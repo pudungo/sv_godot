@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dwvww7qx7uvy6"]
+
+[ext_resource type="Texture2D" uid="uid://bkd2b6qyxx2lp" path="res://UIElements/precious-metals-page-foreground-600x400.webp" id="1_41w7s"]
+[ext_resource type="Script" uid="uid://o2yovuy1kjby" path="res://Scripts/HUD.gd" id="1_b6so7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6so7"]
+bg_color = Color(0.79607844, 0.60784316, 0.26666668, 0.48235294)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="UiScene" type="Node2D" unique_id=1886814754]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=79684240]
+script = ExtResource("1_b6so7")
+
+[node name="Panel" type="Panel" parent="HUD" unique_id=1256264471]
+offset_left = 34.0
+offset_top = 96.0
+offset_right = 592.0
+offset_bottom = 154.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_b6so7")
+
+[node name="PreciousMetalsPageForeground600x400" type="Sprite2D" parent="HUD" unique_id=1552629701]
+position = Vector2(208.75, 131.5)
+scale = Vector2(0.5025, 0.5025)
+texture = ExtResource("1_41w7s")
+
+[node name="CoinLabel" type="Label" parent="HUD" unique_id=1601153395]
+offset_left = 321.0
+offset_top = 99.00001
+offset_right = 574.0
+offset_bottom = 148.0
+scale = Vector2(3.30167, 2.1643546)
+text = "x
+"
