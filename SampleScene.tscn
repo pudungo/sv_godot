@@ -1,49 +1,7 @@
 [gd_scene format=3 uid="uid://cmpbbq"]
 
 [ext_resource type="PackedScene" uid="uid://bwu3" path="res://Prefabs/Cube.tscn" id="2_bwqs"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgo0w" path="res://Prefabs/kaj_02.tscn" id="3_bymm"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgo0q" path="res://Prefabs/kaj_02kaj_mat.tscn" id="4_byne"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgo0k" path="res://Prefabs/kaj_02kaj_matkaj_mat.tscn" id="5_bym5"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgo0e" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_mat.tscn" id="6_bymk"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoy7" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_mat.tscn" id="7_bynm"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoy1" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="8_bymo"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoyu" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="9_byma"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoyo" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="10_bymu"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoyi" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="11_bync"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoyc" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="12_bymc"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgox5" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="13_byni"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoxy" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="14_bym1"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoxs" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="15_byn1"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoxm" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="16_byl7"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoxg" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_mat.tscn" id="17_bymi"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoxa" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max1kaj_mat.tscn" id="18_bymy"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgow3" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max2kaj_mat.tscn" id="19_byng"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoww" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max3kaj_mat.tscn" id="20_byn3"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgowq" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max4kaj_mat.tscn" id="21_bylq"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgowk" path="res://Prefabs/kaj_0201___Default.tscn" id="22_byl5"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgowe" path="res://Prefabs/kaj_0201___Default01___Default.tscn" id="23_bymw"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgosg" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max5kaj_mat.tscn" id="24_byms"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgosa" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max6kaj_mat.tscn" id="25_bylw"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgor3" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max7kaj_mat.tscn" id="26_bylo"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgorw" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max8kaj_mat.tscn" id="27_bynw"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgorq" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max9kaj_mat.tscn" id="28_bym7"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgork" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max10kaj_mat.tscn" id="29_byls"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgore" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max11kaj_mat.tscn" id="30_byna"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoq7" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max12kaj_mat.tscn" id="31_bym3"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoq1" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max13kaj_mat.tscn" id="32_byme"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoqu" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max14kaj_mat.tscn" id="33_bymq"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoqo" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max15kaj_mat.tscn" id="34_byno"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoqi" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max16kaj_mat.tscn" id="35_byl1"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoqc" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max17kaj_mat.tscn" id="36_bynq"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgop5" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max18kaj_mat.tscn" id="37_byn5"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgopy" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max19kaj_mat.tscn" id="38_byl3"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgops" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max20kaj_mat.tscn" id="39_byns"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgopm" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max21kaj_mat.tscn" id="40_bynk"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgopg" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max22kaj_mat.tscn" id="41_bymg"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgopa" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max23kaj_mat.tscn" id="42_bynu"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoo3" path="res://Prefabs/kaj_0201___Default01___Default01___Default.tscn" id="43_bylu"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgoow" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max24kaj_mat.tscn" id="44_byly"]
-[ext_resource type="PackedScene" uid="uid://d4n4ub6itgooq" path="res://Prefabs/kaj_02kaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_matkaj_Length_Max25kaj_mat.tscn" id="45_byny"]
+[ext_resource type="Script" uid="uid://vvjgpexys2s7" path="res://Scripts/killzone.gd" id="45_7fitt"]
 [ext_resource type="PackedScene" uid="uid://bvre" path="res://Prefabs/Cube (4).tscn" id="46_bvye"]
 [ext_resource type="PackedScene" uid="uid://bwoi" path="res://Prefabs/Cube (5).tscn" id="47_bwxi"]
 [ext_resource type="PackedScene" uid="uid://bu3g" path="res://Prefabs/Door.tscn" id="48_bv8c"]
@@ -146,10 +104,6 @@
 [ext_resource type="PackedScene" uid="uid://cyckbgl8r264q" path="res://Scenes/CoinScene.tscn" id="145_7fitt"]
 [ext_resource type="PackedScene" uid="uid://cipl5vlioxfx4" path="res://Scenes/charbody.tscn" id="145_t7ntt"]
 
-[sub_resource type="CapsuleShape3D" id="0_bwnc"]
-radius = 25.0
-height = 103.0633
-
 [sub_resource type="BoxShape3D" id="1_bvco"]
 size = Vector3(1.74247, 1, 1.589654)
 
@@ -198,150 +152,12 @@ sky_mode = 1
 [node name="Cube" parent="." unique_id=1840158292 instance=ExtResource("2_bwqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.06, -0.41587, -1.72)
 
-[node name="kaj_02" type="Node3D" parent="." unique_id=607091519]
-transform = Transform3D(0.01683, 0, 0, 0, 0.01683, 0, 0, 0, 0.01683, -8.6929, -0.111, -4.0514)
-visible = false
-
-[node name="kaj_02_StaticBody" type="StaticBody3D" parent="kaj_02" unique_id=1023453404]
-
-[node name="CapsuleCollider_0" type="CollisionShape3D" parent="kaj_02/kaj_02_StaticBody" unique_id=1194664165]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 58.82524, 0)
-shape = SubResource("0_bwnc")
-debug_fill = false
-
-[node name="Box001" parent="kaj_02" unique_id=883709845 instance=ExtResource("3_bymm")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 1.2, 67.59704, 4.2)
-
-[node name="Box002" parent="kaj_02" unique_id=1415200988 instance=ExtResource("4_byne")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -1.23583, 67.6563, 4.13171)
-
-[node name="Box003" parent="kaj_02" unique_id=530339466 instance=ExtResource("5_bym5")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -4.61002, 67.6604, 2.90246)
-
-[node name="Box010" parent="kaj_02" unique_id=273393573 instance=ExtResource("6_bymk")]
-transform = Transform3D(-100, 0, 0, 0, -0.03453, 99.99999, 0, -99.99999, -0.03453, 5.48998, 67.6604, 2.90246)
-
-[node name="Box011" parent="kaj_02" unique_id=1405258636 instance=ExtResource("7_bynm")]
-transform = Transform3D(-100, -6e-05, 0, 0, -8.71557, 99.61947, -6e-05, 99.61947, 8.71557, 5.48998, 68.80243, -8.98399)
-
-[node name="Box012" parent="kaj_02" unique_id=560888871 instance=ExtResource("8_bymo")]
-transform = Transform3D(100, -6e-05, 0, 0, -8.71556, 99.61947, 6e-05, 99.61947, 8.71556, -4.61002, 68.80243, -8.98399)
-
-[node name="Box014" parent="kaj_02" unique_id=1095951536 instance=ExtResource("9_byma")]
-transform = Transform3D(49.78223, -14.75515, -8.09629, -4.35537, -28.74003, 41.60181, -18.18845, -33.50317, -32.1216, 5.7886, 85.33787, 2.68482)
-
-[node name="Box015" parent="kaj_02" unique_id=406082446 instance=ExtResource("10_bymu")]
-transform = Transform3D(49.39545, -17.2309, 0.72287, -8.14337, -16.30172, 49.14058, -17.93973, -40.04392, -20.31598, 5.88705, 84.59335, 3.12082)
-
-[node name="Cylinder001" parent="kaj_02" unique_id=1123760941 instance=ExtResource("11_bync")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 21.76052, 65.38065, 0.00341)
-
-[node name="Cylinder003" parent="kaj_02" unique_id=407816425 instance=ExtResource("12_bymc")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 17.17397, 75.08284, -3.99949)
-
-[node name="Cylinder004" parent="kaj_02" unique_id=1940607886 instance=ExtResource("13_byni")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 16.30072, 76.90735, -3.95614)
-
-[node name="Cylinder005" parent="kaj_02" unique_id=1356428244 instance=ExtResource("14_bym1")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 22.42567, 64.13129, 0.85481)
-
-[node name="Cylinder010" parent="kaj_02" unique_id=1783878179 instance=ExtResource("15_byn1")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -12.01653, 89.5841, -5.42919)
-
-[node name="Cylinder011" parent="kaj_02" unique_id=890175228 instance=ExtResource("16_byl7")]
-transform = Transform3D(89.5977, 2e-05, 0, 0, -23.18958, 86.54472, 2e-05, -86.54472, -23.18958, 0.24922, 81.75792, 4.66537)
-
-[node name="Cylinder012" parent="kaj_02" unique_id=1826423226 instance=ExtResource("17_bymi")]
-transform = Transform3D(89.5977, 0, 0, 0, 30.64421, 84.19431, 0, -84.19431, 30.64421, 0.24922, 76.61722, 3.59357)
-
-[node name="Cylinder013" parent="kaj_02" unique_id=317105914 instance=ExtResource("18_bymy")]
-transform = Transform3D(89.5977, 1e-05, 0, 0, -44.79885, 77.59389, 1e-05, -77.59389, -44.79885, 0.15606, 87.01611, 1.59367)
-
-[node name="Group32889" parent="kaj_02" unique_id=2024962736 instance=ExtResource("19_byng")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 14.19958, 80.7709, -4.47984)
-
-[node name="Group32904" parent="kaj_02" unique_id=475852983 instance=ExtResource("20_byn3")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 99.39235, -8.57594)
-
-[node name="Group32919" parent="kaj_02" unique_id=789210826 instance=ExtResource("21_bylq")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 12.20547, 89.2808, -5.30569)
-
-[node name="Group32964" parent="kaj_02" unique_id=2066755003 instance=ExtResource("22_byl5")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 17.72997, 73.8537, -3.61659)
-
-[node name="Group51434" parent="kaj_02" unique_id=1475368126 instance=ExtResource("23_bymw")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 99.41375, -12.38679)
-
-[node name="Object001" parent="kaj_02" unique_id=1807084323 instance=ExtResource("24_byms")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 93.97305, -3.83084)
-
-[node name="Object002" parent="kaj_02" unique_id=268685836 instance=ExtResource("25_bylw")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -6.61398, 54.13075, -3.59199)
-
-[node name="Object003" parent="kaj_02" unique_id=589320032 instance=ExtResource("26_bylo")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -8.78863, 77.9607, -1.79724)
-
-[node name="polySurface1" parent="kaj_02" unique_id=671064868 instance=ExtResource("27_bynw")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24918, 16.5622, -0.71239)
-
-[node name="polySurface2" parent="kaj_02" unique_id=1040492777 instance=ExtResource("28_bym7")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 92.11485, -0.43694)
-
-[node name="polySurface3" parent="kaj_02" unique_id=155402157 instance=ExtResource("29_byls")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 88.52005, 1.43961)
-
-[node name="polySurface10" parent="kaj_02" unique_id=715998709 instance=ExtResource("30_byna")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -18.63548, 66.9213, 0.04436)
-
-[node name="polySurface11" parent="kaj_02" unique_id=91253133 instance=ExtResource("31_bym3")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 23.39397, 59.68855, 2.83706)
-
-[node name="polySurface12" parent="kaj_02" unique_id=119895917 instance=ExtResource("32_byme")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 68.31876, -2.75684)
-
-[node name="polySurface13" parent="kaj_02" unique_id=1451473172 instance=ExtResource("33_bymq")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -5.88112, 87.459, -2.55024)
-
-[node name="polySurface14" parent="kaj_02" unique_id=972859524 instance=ExtResource("34_byno")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.47702, 84.63939, -3.04494)
-
-[node name="polySurface15" parent="kaj_02" unique_id=2044774776 instance=ExtResource("35_byl1")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24913, 101.7182, 2.50111)
-
-[node name="polySurface016" parent="kaj_02" unique_id=1969998275 instance=ExtResource("36_bynq")]
-transform = Transform3D(-100, 0, 0, 0, -0.03453, 99.99999, 0, -99.99999, -0.03453, 0.24913, 101.7182, 2.50111)
-
-[node name="r_hair1" parent="kaj_02" unique_id=1705982854 instance=ExtResource("37_byn5")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 102.3174, -2.12654)
-
-[node name="r_hair2" parent="kaj_02" unique_id=330046866 instance=ExtResource("38_byl3")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 97.5488, -13.71239)
-
-[node name="r_head" parent="kaj_02" unique_id=322617766 instance=ExtResource("39_byns")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24918, 99.17064, -1.31629)
-
-[node name="r_pants" parent="kaj_02" unique_id=502061050 instance=ExtResource("40_bynk")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 0.24922, 49.0872, -3.11489)
-
-[node name="r_shirt" parent="kaj_02" unique_id=387144071 instance=ExtResource("41_bymg")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -1.26293, 81.63924, -2.75644)
-
-[node name="rarm" parent="kaj_02" unique_id=882596615 instance=ExtResource("42_bynu")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 19.15362, 70.0019, -2.99929)
-
-[node name="Sphere001" parent="kaj_02" unique_id=1095865165 instance=ExtResource("43_bylu")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, 22.07607, 64.77589, 0.43546)
-
-[node name="Sphere002" parent="kaj_02" unique_id=1893641432 instance=ExtResource("44_byly")]
-transform = Transform3D(100, 0, 0, 0, 1e-05, 99.99999, 0, -99.99999, 1e-05, -1.56432, 101.0677, 1.66126)
-
-[node name="Sphere004" parent="kaj_02" unique_id=1374033137 instance=ExtResource("45_byny")]
-transform = Transform3D(-100, 0, 0, 0, -0.03453, 99.99999, 0, -99.99999, -0.03453, 2.23634, 101.0677, 1.66126)
-
 [node name="KillZone" type="Node3D" parent="." unique_id=1796151875]
 transform = Transform3D(110.8673, 0, 0, 0, 11.21015, 0, 0, 0, 86.33813, -2.9931, -17.96, -2.6494)
 
-[node name="KillZone_StaticBody" type="StaticBody3D" parent="KillZone" unique_id=59190140]
+[node name="KillZone_StaticBody" type="Area3D" parent="KillZone" unique_id=75061891]
+collision_layer = 8
+script = ExtResource("45_7fitt")
 
 [node name="BoxCollider_0" type="CollisionShape3D" parent="KillZone/KillZone_StaticBody" unique_id=1399144969]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02662, 0, 0.29483)
@@ -653,6 +469,7 @@ transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 7.34399, -0.26274, -3.04152
 
 [node name="CharacterBody3D" parent="." unique_id=401991299 instance=ExtResource("145_t7ntt")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.7613735, 0.019110858, -3.9332592)
+collision_mask = 15
 
 [node name="Block" type="Node3D" parent="." unique_id=897594103]
 
@@ -971,3 +788,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.55, 0.037, 6.25)
 
 [node name="Coin" parent="." unique_id=648124268 instance=ExtResource("145_7fitt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.351384, 0.9711385, 0)
+
+[connection signal="body_entered" from="KillZone/KillZone_StaticBody" to="KillZone/KillZone_StaticBody" method="_on_body_entered"]

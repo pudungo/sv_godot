@@ -67,6 +67,13 @@ right_click={
 ]
 }
 
+[layer_names]
+
+2d_navigation/layer_1="player"
+2d_navigation/layer_2="ground"
+2d_navigation/layer_3="item"
+2d_navigation/layer_4="fallzone"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=2

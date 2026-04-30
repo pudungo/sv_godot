@@ -22,7 +22,7 @@ var _camera_input_direction := Vector2.ZERO
 func _unhandled_input(event: InputEvent) -> void:
 	var is_camera_motion := (
 		event is InputEventMouseMotion and
-		Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED
+		Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED # Gets mouse controll
 		)
 	if is_camera_motion:
 		_camera_input_direction = event.screen_relative * mouse_sensitivity
@@ -33,9 +33,9 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		
-func _physics_process(delta: float) -> void:
-	
-	camera_pivot.rotation.x += _camera_input_direction.y * delta
+func _physics_process(delta: float) -> void: 
+	# Mouse look/aim control
+	camera_pivot.rotation.x -= _camera_input_direction.y * delta
 	
 	camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, -PI / 6.0, PI/3.0)
 	
@@ -47,12 +47,14 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	
+	# Velocity Control
 	var raw_input := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	var forward := -camera.global_basis.z
 	var right := camera.global_basis.x
 	
-	var move_direction := forward * -raw_input.y + right * raw_input.x
+	var move_direction := forward * -raw_input.y + right * raw_input.x # Moving y is backwards as character is rotated -180 degrees
 	move_direction.y = 0.0
 	move_direction = move_direction.normalized()
 	
@@ -61,6 +63,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
+	# Rotates character body to face move direction
 	if move_direction.length() > 0.0:
 		last_movement_direction = move_direction.normalized()
 		
@@ -86,6 +89,7 @@ func _physics_process(delta: float) -> void:
 			
 	move_and_slide()
 	
+	# fall detection / Animaton Player
 	if is_starting_jump:
 		animation_player.play("jump")
 	elif not is_on_floor() and velocity.y < 0:
