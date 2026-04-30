@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cqqu7wxogo1jj"]
+
+[ext_resource type="FontFile" uid="uid://dpsmubub7jv2t" path="res://UIElements/RubikMonoOne-Regular.ttf" id="1_lvt8e"]
+[ext_resource type="Script" uid="uid://cqa3dukuobpkt" path="res://Scripts/GameOver.gd" id="2_qp84s"]
+
+[node name="GameOverUi" type="Node2D" unique_id=568159418]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=62011050]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1843070815]
+offset_left = 388.0
+offset_top = 927.0
+offset_right = 1544.0
+offset_bottom = 1139.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1530812465]
+offset_left = 388.0
+offset_top = 811.0
+offset_right = 1544.0
+offset_bottom = 1023.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="Label3" type="Label" parent="CanvasLayer" unique_id=1851028990]
+offset_left = 388.0
+offset_top = 697.0
+offset_right = 1544.0
+offset_bottom = 909.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="Label4" type="Label" parent="CanvasLayer" unique_id=2050089530]
+offset_left = 394.0
+offset_top = 189.0
+offset_right = 1550.0
+offset_bottom = 401.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="Label5" type="Label" parent="CanvasLayer" unique_id=1318819495]
+offset_left = 394.0
+offset_top = 73.0
+offset_right = 1550.0
+offset_bottom = 285.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="Label6" type="Label" parent="CanvasLayer" unique_id=1992698146]
+offset_left = 394.0
+offset_top = -41.0
+offset_right = 1550.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 170
+text = "GAMEOVER"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=138989685]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainMenuButton" type="Button" parent="CanvasLayer" unique_id=912520071]
+offset_left = 677.0
+offset_top = 477.0
+offset_right = 1259.0
+offset_bottom = 578.0
+theme_override_fonts/font = ExtResource("1_lvt8e")
+theme_override_font_sizes/font_size = 75
+text = "Main Menu"
+script = ExtResource("2_qp84s")
+
+[connection signal="pressed" from="CanvasLayer/MainMenuButton" to="CanvasLayer/MainMenuButton" method="_on_pressed"]

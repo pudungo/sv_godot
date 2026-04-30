@@ -69,6 +69,7 @@
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgm1m" path="res://Prefabs/Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max19meleeguyMAT.tscn" id="107_b1au"]
 [ext_resource type="PackedScene" uid="uid://dwvww7qx7uvy6" path="res://Scenes/UIScene.tscn" id="108_ah5bk"]
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgm1g" path="res://Prefabs/Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max20meleeguyMAT.tscn" id="108_b083"]
+[ext_resource type="Shader" uid="uid://crsiqqs7ifb2v" path="res://customsky.tres" id="108_f08ai"]
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgm1a" path="res://Prefabs/Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max21meleeguyMAT.tscn" id="109_b1da"]
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgm03" path="res://Prefabs/Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max22meleeguyMAT.tscn" id="110_b075"]
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgm0w" path="res://Prefabs/Salsa DancingmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMATmeleeguyMA_Length_Max23meleeguyMAT.tscn" id="111_b08e"]
@@ -143,6 +144,34 @@ size = Vector3(2.334907, 4.644078, 8.657007)
 
 [sub_resource type="BoxShape3D" id="8_bvaq"]
 size = Vector3(7.287473, 1.472409, 0.4296643)
+
+[sub_resource type="Gradient" id="Gradient_o8ylg"]
+offsets = PackedFloat32Array(0, 0.99561405, 1)
+colors = PackedColorArray(4.3317675e-07, 0.466438, 0.6079643, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ah5bk"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q1i20"]
+noise = SubResource("FastNoiseLite_ah5bk")
+color_ramp = SubResource("Gradient_o8ylg")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iqfyk"]
+shader = ExtResource("108_f08ai")
+shader_parameter/Texture2DParameter = SubResource("NoiseTexture2D_q1i20")
+
+[sub_resource type="Sky" id="Sky_23g3m"]
+sky_material = SubResource("ShaderMaterial_iqfyk")
+
+[sub_resource type="Environment" id="Environment_1ckjg"]
+background_mode = 2
+background_intensity = 1.0
+sky = SubResource("Sky_23g3m")
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.001
+volumetric_fog_albedo = Color(0.94003165, 1, 0.80979604, 1)
+volumetric_fog_length = 40.0
+volumetric_fog_sky_affect = 0.5
 
 [node name="Root" type="Node3D" unique_id=891249117]
 script = ExtResource("1_atpll")
@@ -929,6 +958,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.464436, 4.237943, 43.47439
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.422562, 0.9711385, 5.1219788)
 
 [node name="UiScene" parent="." unique_id=1886814754 instance=ExtResource("108_ah5bk")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=643128364]
+environment = SubResource("Environment_1ckjg")
+
+[node name="FogVolume" type="FogVolume" parent="." unique_id=1235728294]
+transform = Transform3D(13.625544, 0, 0, 0, 3.8297577, 0, 0, 0, 1, 29.17468, -26.655111, 67.262985)
+size = Vector3(8.626465, 6.6362305, 40.859253)
+
+[node name="FogVolume2" type="FogVolume" parent="." unique_id=1607128175]
+transform = Transform3D(-2.306775, 0, -0.98556495, 0, 3.8297577, 0, 13.428858, 0, -0.16929784, -42.49825, -14.512539, 67.262985)
+size = Vector3(8.626465, 6.6362305, 40.859253)
+
+[node name="FogVolume3" type="FogVolume" parent="." unique_id=196003333]
+transform = Transform3D(-13.566982, 0, 0.09261379, 0, 3.8297577, 0, -1.261913, 0, -0.99570215, 52.99092, -25.356548, 21.534477)
+size = Vector3(8.626465, 6.6362305, 40.859253)
 
 [connection signal="body_entered" from="KillZone/KillZone_StaticBody" to="KillZone/KillZone_StaticBody" method="_on_body_entered"]
 [connection signal="body_entered" from="KillZone/KillZone_StaticBody" to="Block/Cube_469/StaticBody3D" method="_on_kill_zone_static_body_body_entered"]

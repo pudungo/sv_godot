@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://b4vqaf8a0w2h6"]
+
+[ext_resource type="PackedScene" uid="uid://d4n4ub6itgmnc" path="res://Prefabs/LowPoly Trees.tscn" id="1_8710x"]
+[ext_resource type="PackedScene" uid="uid://d4n4ub6itgmm3" path="res://Prefabs/LowPoly Treesbark.tscn" id="2_a14ly"]
+[ext_resource type="PackedScene" uid="uid://bvt3" path="res://Prefabs/LowPoly Treesplant_masked.tscn" id="3_tr7xh"]
+[ext_resource type="PackedScene" uid="uid://d4n4ub6itgmmu" path="res://Prefabs/LowPoly Treesoak.tscn" id="4_w0gmt"]
+[ext_resource type="PackedScene" uid="uid://bvic" path="res://Prefabs/LowPoly Treesplant_maskedplant_masked.tscn" id="5_6wu1n"]
+[ext_resource type="PackedScene" uid="uid://d4n4ub6itgmmm" path="res://Prefabs/LowPoly Treesbirch.tscn" id="6_aa261"]
+[ext_resource type="PackedScene" uid="uid://buuk" path="res://Prefabs/LowPoly TreesTexturesCom_Tree_BeechBranch01_512_albedo.tscn" id="7_bdvmp"]
+[ext_resource type="PackedScene" uid="uid://d4n4ub6itgmme" path="res://Prefabs/LowPoly Treesplant_maskedplant_maskedplant_masked.tscn" id="8_5ywbh"]
+[ext_resource type="PackedScene" uid="uid://cqqu7wxogo1jj" path="res://Scenes/GameOverUI.tscn" id="9_a14ly"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4swy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gyt8k"]
+
+[sub_resource type="Environment" id="Environment_ecood"]
+background_mode = 1
+background_color = Color(1, 0, 0, 1)
+
+[node name="GameOver" type="Node3D" unique_id=1618359900]
+
+[node name="LowPoly Trees" type="Node3D" parent="." unique_id=1496186160]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -2.8516, -0.01, -3.35)
+
+[node name="Cylinder_673" parent="LowPoly Trees" unique_id=697552285 instance=ExtResource("1_8710x")]
+transform = Transform3D(0.31529, 0, 0, 0, 0.00011, 0.31529, 0, -0.31529, 0.00011, 0, 0, -13.18737)
+
+[node name="Cylinder_001" parent="LowPoly Trees" unique_id=643819846 instance=ExtResource("2_a14ly")]
+transform = Transform3D(0.49052, 0, 0, 0, 0.00017, 0.49052, 0, -0.49052, 0.00017, -42.74469, 0, 0)
+
+[node name="Cylinder_001 (1)" parent="LowPoly Trees" unique_id=1827684367 instance=ExtResource("2_a14ly")]
+transform = Transform3D(-0.03352, 0.48937, -0.00024, 0, 0.00024, 0.49052, 0.48937, 0.03352, -2e-05, -7.92153, 0, 25.94763)
+
+[node name="Tree Branch_002 (1)" parent="LowPoly Trees" unique_id=1422484783 instance=ExtResource("3_tr7xh")]
+transform = Transform3D(-1.77242, -0.46264, 0.25007, -0.48486, 1.77801, -0.1471, -0.20369, -0.2066, -1.82589, -7.80342, 4.28423, 26.28117)
+
+[node name="Cylinder_002" parent="LowPoly Trees" unique_id=1836151205 instance=ExtResource("4_w0gmt")]
+transform = Transform3D(1, 0, 0, 0, 0.00035, 1, 0, -1, 0.00035, -40.09999, 0.04287, 20.74594)
+
+[node name="Cylinder_002 (1)" parent="LowPoly Trees" unique_id=1048393238 instance=ExtResource("4_w0gmt")]
+transform = Transform3D(-0.58649, -0.80996, 0, 0, 0, 1, -0.80996, 0.58649, 0, -33.36, 0.04287, -16.21535)
+
+[node name="TexturesCom_Branches0014_1_masked_S_002 (1)" parent="LowPoly Trees" unique_id=1594848663 instance=ExtResource("5_6wu1n")]
+transform = Transform3D(-7.41965, 0.21699, 6.14092, -5.13715, 5.06365, -6.38579, -3.3716, -8.19277, -3.78417, -33.36, 0.04287, -16.21535)
+
+[node name="Cylinder_003" parent="LowPoly Trees" unique_id=945249788 instance=ExtResource("6_aa261")]
+transform = Transform3D(0.70648, 0, 0, 0, 0.00024, 0.70648, 0, -0.70648, 0.00024, 0.02863, 7.54117, -0.00016)
+
+[node name="Cylinder_003 (1)" parent="LowPoly Trees" unique_id=1304454617 instance=ExtResource("6_aa261")]
+transform = Transform3D(0.01575, 0.7063, 0, 0, 0, 0.70648, 0.7063, -0.01575, 0, -32.08109, 7.54117, 28.20853)
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002 (1)" parent="LowPoly Trees" unique_id=1659597484 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(-1.7235, -3.31253, -0.89993, -2.43952, 1.89046, -2.2865, 2.41484, -0.4544, -2.95216, -31.75303, 8.82684, 28.42049)
+
+[node name="_Node3D_233549" parent="LowPoly Trees" unique_id=1918683535 instance=ExtResource("6_aa261")]
+transform = Transform3D(0.01575, 0.7062999, 0, 0, 0, 0.7064799, 0.7062999, -0.01575, 0, 187.34366, 16.540134, 140.9278)
+
+[node name="_Node3D_233550" parent="LowPoly Trees" unique_id=902528711 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(-1.7234998, -3.3125293, -0.89992994, -2.4395196, 1.8904599, -2.2865, 2.4148397, -0.4544, -2.9521596, 187.67172, 17.825806, 141.13976)
+
+[node name="Cylinder_003 (1)2" parent="LowPoly Trees" unique_id=1247356357 instance=ExtResource("6_aa261")]
+transform = Transform3D(0.01575, 0.7062999, 0, 0, 0, 0.7064799, 0.7062999, -0.01575, 0, 187.34363, 16.540133, 170.89877)
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002 (1)2" parent="LowPoly Trees" unique_id=1505270440 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(2.9074147, 2.112685, -1.3552493, -2.4395187, 1.8904599, -2.2865, -0.5906276, 2.5915031, 2.772799, 187.67166, 17.825798, 171.11073)
+
+[node name="Cylinder_003 (1)3" parent="LowPoly Trees" unique_id=82323911 instance=ExtResource("6_aa261")]
+transform = Transform3D(0.4803201, 0.5180735, 0, 0, 0, 0.7064799, 0.5180735, -0.4803201, 0, 159.78633, 16.540129, 171.03426)
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002 (1)3" parent="LowPoly Trees" unique_id=990866436 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(0.31223154, -2.7801855, -2.6317725, -2.4395194, 1.8904599, -2.2865002, 2.9503238, 1.8573892, -1.6121076, 160.17242, 17.825798, 170.97523)
+
+[node name="Cylinder_003 (1)4" parent="LowPoly Trees" unique_id=1690200008 instance=ExtResource("6_aa261")]
+transform = Transform3D(-0.70233333, 0.07639016, 0, 0, 0, 0.7064799, 0.07639016, 0.70233333, 0, 160.07085, 16.540127, 146.47548)
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002 (1)4" parent="LowPoly Trees" unique_id=1652761599 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(-2.554021, 0.16804466, 2.8638985, -2.4395194, 1.8904599, -2.2865002, -1.5095955, -3.339324, -1.1503052, 159.88788, 17.825796, 146.82056)
+
+[node name="Plane_001" parent="LowPoly Trees" unique_id=1730595285 instance=ExtResource("8_5ywbh")]
+transform = Transform3D(1.85272, -0.1083, 0.3151, -0.43879, 0.4965, 0.83882, -0.48593, -0.86126, 0.44394, -1.02178, 6.85691, -13.25001)
+
+[node name="Cylinder (1)_684" parent="LowPoly Trees" unique_id=179674042 instance=ExtResource("1_8710x")]
+transform = Transform3D(-0.31168, 0.04761, 0, 0, 0, 0.31529, 0.04761, 0.31168, 0, -11.81952, 0, 10.57883)
+
+[node name="Plane_001 (1)" parent="LowPoly Trees" unique_id=411213802 instance=ExtResource("8_5ywbh")]
+transform = Transform3D(-1.75809, 0.23712, -0.37853, -0.43879, 0.4965, 0.83883, 0.76014, 0.83502, -0.39127, -10.8, 6.85691, 10.48644)
+
+[node name="Cylinder (2)_686" parent="LowPoly Trees" unique_id=1633048108 instance=ExtResource("1_8710x")]
+transform = Transform3D(0.2323, -0.21319, 7e-05, 0, 0.00011, 0.31529, -0.21319, -0.2323, 8e-05, -31.09351, 0, -8.63084)
+
+[node name="Plane_001 (2)" parent="LowPoly Trees" unique_id=487537003 instance=ExtResource("8_5ywbh")]
+transform = Transform3D(1.03645, -0.66213, 0.53233, -0.43879, 0.4965, 0.83882, -1.61074, -0.56131, 0.11402, -31.88866, 6.85691, -7.98609)
+
+[node name="TexturesCom_Branches0014_1_masked_S_002" parent="LowPoly Trees" unique_id=1272008315 instance=ExtResource("5_6wu1n")]
+transform = Transform3D(7.0824, 6.5085196, -0.53657997, -5.1371493, 5.0636497, -6.3857894, -4.0321794, 4.9807396, 7.19325, -40.099995, 0.042869996, 20.745937)
+
+[node name="TexturesCom_Tree_BeechBranch01_512_albedo_002" parent="LowPoly Trees" unique_id=870900784 instance=ExtResource("7_bdvmp")]
+transform = Transform3D(2.37583, -0.52812, -2.97148, -2.43952, 1.89046, -2.28649, 1.77689, 3.30158, 0.83391, 0.24786, 8.82684, -0.3234)
+
+[node name="Tree Branch_002" parent="LowPoly Trees" unique_id=943679532 instance=ExtResource("3_tr7xh")]
+transform = Transform3D(-0.08209, -0.1745, -1.83871, -0.48486, 1.77801, -0.1471, 1.7822, 0.47568, -0.12471, -42.42, 4.28423, -0.14065)
+
+[node name="Node3D" type="Node3D" parent="LowPoly Trees" unique_id=686805106]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LowPoly Trees/Node3D" unique_id=176314940]
+transform = Transform3D(67.093636, 0, 0, 0, -1.1147162, 0, 0, 0, 157.74496, -20.010944, -0.5191962, 10.052668)
+material_override = SubResource("StandardMaterial3D_i4swy")
+mesh = SubResource("BoxMesh_gyt8k")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1518111492]
+transform = Transform3D(-0.25881907, 0.30823484, 0.9154256, 1.3948662e-08, 0.94771826, -0.3191082, -0.9659258, -0.08259127, -0.24528758, 0, 0.84540915, -6.069983)
+fov = 55.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=366281185]
+environment = SubResource("Environment_ecood")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1113190270]
+
+[node name="GameOverUi" parent="." unique_id=568159418 instance=ExtResource("9_a14ly")]

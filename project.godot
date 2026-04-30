@@ -15,12 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Solvamp_v01"
-run/main_scene="uid://cmpbbq"
+run/main_scene="uid://dtf44h7h5xdqx"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]
 
 CollectibleManager="*uid://d1srr625jx5f7"
+Transition="*uid://dxagobykj871e"
 
 [display]
 

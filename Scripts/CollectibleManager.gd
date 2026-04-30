@@ -53,4 +53,4 @@ func _show_win_ui_and_reset_scene() -> void: # will reset scene after winUI scen
 		current_scene.add_child(win_ui)
 
 	await get_tree().create_timer(WIN_RESET_DELAY).timeout
-	get_tree().reload_current_scene()
+	Transition.fade_to_scene("res://Scenes/MainMenuScene.tscn")

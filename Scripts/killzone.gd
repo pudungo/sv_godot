@@ -10,13 +10,5 @@ func _ready() -> void:
 
 
 func _on_body_entered(body: Node3D) -> void:
-	if not (body is CharacterBody3D): # Reads tagged player as CharacerBody3D (makes sure it's only the player detected)
-		return
-	if respawn_position != Vector3.ZERO: 
-		body.global_position = respawn_position # Resets scene to respawn location
-	call_deferred("reset_scene") 
-
-
-func reset_scene() -> void:
-	await get_tree().create_timer(2.0).timeout # Delay timer before the scene is reset after death
-	get_tree().reload_current_scene()
+	if body is CharacterBody3D: # Reads tagged player as CharacerBody3D (makes sure it's only the player detected)
+		Transition.fade_to_scene("res://Scenes/GameOver.tscn")

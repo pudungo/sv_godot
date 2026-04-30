@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://k70rjvmkie1s"]
+
+[ext_resource type="Script" uid="uid://dyeoh0g0csbmt" path="res://Scripts/MainMenu.gd" id="1_wbifv"]
+[ext_resource type="Texture2D" uid="uid://dnv5w2elopopy" path="res://UIElements/solvamplogo.png" id="1_wqxs1"]
+[ext_resource type="FontFile" uid="uid://dpsmubub7jv2t" path="res://UIElements/RubikMonoOne-Regular.ttf" id="2_r3ws6"]
+
+[node name="MainMenuUi" type="Control" unique_id=535262331]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wbifv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1742113076]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1315818208]
+offset_left = -92.0
+offset_top = -18.0
+offset_right = 1908.0
+offset_bottom = 982.0
+scale = Vector2(0.4286971, 0.4286971)
+texture = ExtResource("1_wqxs1")
+
+[node name="StartButton" type="Button" parent="CanvasLayer" unique_id=551471262]
+offset_left = 557.0
+offset_top = 444.0
+offset_right = 875.0
+offset_bottom = 544.0
+theme_override_fonts/font = ExtResource("2_r3ws6")
+theme_override_font_sizes/font_size = 73
+text = "Start"
+
+[node name="ExitButton" type="Button" parent="CanvasLayer" unique_id=146021048]
+offset_left = 560.0
+offset_top = 594.0
+offset_right = 816.0
+offset_bottom = 694.0
+theme_override_fonts/font = ExtResource("2_r3ws6")
+theme_override_font_sizes/font_size = 73
+text = "EXIT"
+
+[connection signal="pressed" from="CanvasLayer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ExitButton" to="." method="_on_exit_button_pressed"]

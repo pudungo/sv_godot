@@ -1,0 +1,22 @@
+[gd_resource type="Environment" format=3 uid="uid://dmm1vb5tva00y"]
+
+[ext_resource type="Shader" uid="uid://crsiqqs7ifb2v" path="res://customsky.tres" id="1_40vc6"]
+
+[sub_resource type="Gradient" id="Gradient_o8ylg"]
+offsets = PackedFloat32Array(0, 0.99561405, 1)
+colors = PackedColorArray(0, 0.4666342, 0.8115882, 1, 0.5247218, 0.79565805, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q1i20"]
+color_ramp = SubResource("Gradient_o8ylg")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iqfyk"]
+shader = ExtResource("1_40vc6")
+shader_parameter/Texture2DParameter = SubResource("NoiseTexture2D_q1i20")
+
+[sub_resource type="Sky" id="Sky_23g3m"]
+sky_material = SubResource("ShaderMaterial_iqfyk")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_23g3m")
