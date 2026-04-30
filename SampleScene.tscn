@@ -108,6 +108,7 @@
 [ext_resource type="PackedScene" uid="uid://d4n4ub6itgmnu" path="res://Prefabs/M_archway_pillar02.tscn" id="144_byj7"]
 [ext_resource type="PackedScene" uid="uid://cyckbgl8r264q" path="res://Scenes/CoinScene.tscn" id="145_7fitt"]
 [ext_resource type="PackedScene" uid="uid://cipl5vlioxfx4" path="res://Scenes/charbody.tscn" id="145_t7ntt"]
+[ext_resource type="PackedScene" uid="uid://dk6qielfwmtqo" path="res://Scenes/SoundManager.tscn" id="146_wj1mx"]
 
 [sub_resource type="BoxShape3D" id="1_bvco"]
 size = Vector3(1.74247, 1, 1.589654)
@@ -958,6 +959,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.464436, 4.237943, 43.47439
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.422562, 0.9711385, 5.1219788)
 
 [node name="UiScene" parent="." unique_id=1886814754 instance=ExtResource("108_ah5bk")]
+
+[node name="SoundManager" parent="." unique_id=46400924 instance=ExtResource("146_wj1mx")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=643128364]
 environment = SubResource("Environment_1ckjg")

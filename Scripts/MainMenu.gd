@@ -8,4 +8,4 @@ func _on_exit_button_pressed() -> void:
 
 
 func _on_start_button_pressed() -> void:
-	Transition.fade_to_scene("res://SampleScene.tscn")
+	get_tree().change_scene_to_file("res://SampleScene.tscn")

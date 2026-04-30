@@ -1,9 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvre"]
+[gd_scene format=3 uid="uid://bvre"]
 
 [ext_resource type="PackedScene" uid="uid://bvye" path="res://Cube (4).glb" id="1_bvye"]
 [ext_resource type="Material" uid="uid://bhpu" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/walls.tres" id="2_bhpu"]
 
-[node name="Cube (4)" instance=ExtResource("1_bvye")]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t1ad6"]
+data = PackedVector3Array(8.7407, -1.7901, 0.28919998, -8.7407, -1.7901, 0.28919998, 8.7407, 1.7901, 0.28919998, -8.7407, -1.7901, 0.28919998, -8.7407, 1.7901, 0.28919998, 8.7407, 1.7901, 0.28919998, -8.7407, -1.7901, 0.28919998, -8.7407, -1.7901, -0.28919998, -8.7407, 1.7901, 0.28919998, -8.7407, -1.7901, -0.28919998, -8.7407, 1.7901, -0.28919998, -8.7407, 1.7901, 0.28919998, -8.7407, -1.7901, -0.28919998, 8.7407, -1.7901, -0.28919998, -8.7407, 1.7901, -0.28919998, 8.7407, -1.7901, -0.28919998, 8.7407, 1.7901, -0.28919998, -8.7407, 1.7901, -0.28919998, 8.7407, -1.7901, -0.28919998, 8.7407, -1.7901, 0.28919998, 8.7407, 1.7901, -0.28919998, 8.7407, -1.7901, 0.28919998, 8.7407, 1.7901, 0.28919998, 8.7407, 1.7901, -0.28919998, 8.7407, 1.7901, 0.28919998, -8.7407, 1.7901, 0.28919998, 8.7407, 1.7901, -0.28919998, -8.7407, 1.7901, 0.28919998, -8.7407, 1.7901, -0.28919998, 8.7407, 1.7901, -0.28919998, 8.7407, -1.7901, -0.28919998, -8.7407, -1.7901, -0.28919998, 8.7407, -1.7901, 0.28919998, -8.7407, -1.7901, -0.28919998, -8.7407, -1.7901, 0.28919998, 8.7407, -1.7901, 0.28919998)
 
-[node name="pb_Mesh-140146" parent="." index="0"]
+[node name="Cube (4)" unique_id=435619954 instance=ExtResource("1_bvye")]
+
+[node name="pb_Mesh-140146" parent="." index="0" unique_id=1646162042]
 surface_material_override/0 = ExtResource("2_bhpu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pb_Mesh-140146" index="0" unique_id=692469487]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pb_Mesh-140146" index="1" unique_id=520852093]
+shape = SubResource("ConcavePolygonShape3D_t1ad6")

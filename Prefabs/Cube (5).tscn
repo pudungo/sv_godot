@@ -1,9 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwoi"]
+[gd_scene format=3 uid="uid://bwoi"]
 
 [ext_resource type="PackedScene" uid="uid://bwxi" path="res://Cube (5).glb" id="1_bwxi"]
 [ext_resource type="Material" uid="uid://bhpu" path="res://PS1 Asset Pack Volume1 (Gothic)/PS1 Asset Pack Volume1 (Gothic)/All textures used/walls.tres" id="2_bhpu"]
 
-[node name="Cube (5)" instance=ExtResource("1_bwxi")]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_474jl"]
+data = PackedVector3Array(0.2435, -1.8232, 9.543099, -0.2435, -1.8232, 9.543099, 0.2435, 1.8232, 9.543099, -0.2435, -1.8232, 9.543099, -0.2435, 1.8232, 9.543099, 0.2435, 1.8232, 9.543099, -0.2435, -1.8232, 9.543099, -0.2435, -1.8232, -9.543099, -0.2435, 1.8232, 9.543099, -0.2435, -1.8232, -9.543099, -0.2435, 1.8232, -9.543099, -0.2435, 1.8232, 9.543099, -0.2435, -1.8232, -9.543099, 0.2435, -1.8232, -9.543099, -0.2435, 1.8232, -9.543099, 0.2435, -1.8232, -9.543099, 0.2435, 1.8232, -9.543099, -0.2435, 1.8232, -9.543099, 0.2435, -1.8232, -9.543099, 0.2435, -1.8232, 9.543099, 0.2435, 1.8232, -9.543099, 0.2435, -1.8232, 9.543099, 0.2435, 1.8232, 9.543099, 0.2435, 1.8232, -9.543099, 0.2435, 1.8232, 9.543099, -0.2435, 1.8232, 9.543099, 0.2435, 1.8232, -9.543099, -0.2435, 1.8232, 9.543099, -0.2435, 1.8232, -9.543099, 0.2435, 1.8232, -9.543099, 0.2435, -1.8232, -9.543099, -0.2435, -1.8232, -9.543099, 0.2435, -1.8232, 9.543099, -0.2435, -1.8232, -9.543099, -0.2435, -1.8232, 9.543099, 0.2435, -1.8232, 9.543099)
 
-[node name="pb_Mesh-142140" parent="." index="0"]
+[node name="Cube (5)" unique_id=1181279762 instance=ExtResource("1_bwxi")]
+
+[node name="pb_Mesh-142140" parent="." index="0" unique_id=1607362540]
 surface_material_override/0 = ExtResource("2_bhpu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pb_Mesh-142140" index="0" unique_id=226003573]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pb_Mesh-142140/StaticBody3D" index="0" unique_id=751874735]
+shape = SubResource("ConcavePolygonShape3D_474jl")

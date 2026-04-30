@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pl4dxvl45b4e"
+path="res://.godot/imported/Killer7 OST Unreleased #19 - White Sugar (Margarita Mix).mp3-6f532985074712de1034c309c06ed94d.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Killer7 OST Unreleased #19 - White Sugar (Margarita Mix).mp3"
+dest_files=["res://.godot/imported/Killer7 OST Unreleased #19 - White Sugar (Margarita Mix).mp3-6f532985074712de1034c309c06ed94d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

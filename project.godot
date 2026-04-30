@@ -22,11 +22,13 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 CollectibleManager="*uid://d1srr625jx5f7"
 Transition="*uid://dxagobykj871e"
+SoundManager="uid://dk6qielfwmtqo"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 
 [importer_defaults]
 

@@ -6,6 +6,7 @@ const WIN_COIN_TARGET := 11 # number of coins to win
 const WIN_RESET_DELAY := 2.0 # timer to delay
 
 signal collectibles_updated
+signal collectible_added(type: CollectibleType)
 # Dictionary<CollectibleType, int>
 
 var collectibles : Dictionary[int, int] = {} 
@@ -30,6 +31,7 @@ func add_collectible(type: CollectibleType, amount := 1) -> void:
 	collectibles[type] += amount
 	print(CollectibleType.keys()[type], ": ", collectibles[type]) 
 	emit_signal("collectibles_updated")
+	emit_signal("collectible_added", type)
 	_check_win_condition()
 
 func get_amount(type: CollectibleType) -> int:
